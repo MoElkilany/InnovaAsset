@@ -1,0 +1,73 @@
+{
+  "buildCommand" : {
+    "command" : "build",
+    "skipDependencies" : false,
+    "style" : "buildOnly"
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "18c1723432283e0cc55f10a6dcfd9e0288a783a885d8b0b3beb2e9f90bde3f49"
+    }
+  ],
+  "containerPath" : "/Users/sgtmac/Projects/Flutter/Innova/innova/ios/Runner.xcworkspace",
+  "continueBuildingAfterErrors" : false,
+  "dependencyScope" : "workspace",
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "arm64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "iphonesimulator",
+      "sdk" : "iphonesimulator26.2",
+      "sdkVariant" : "iphonesimulator",
+      "supportedArchitectures" : [
+        "arm64",
+        "x86_64"
+      ],
+      "targetArchitecture" : "arm64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/sgtmac/Projects/Flutter/Innova/innova/ios/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/sgtmac/Projects/Flutter/Innova/innova/ios/Build/Products",
+      "derivedDataPath" : "/Users/sgtmac/Library/Developer/Xcode/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/sgtmac/Library/Developer/Xcode/DerivedData/Runner-fibfeuemsrceklekalhxiwypiwzd/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/sgtmac/Library/Developer/Xcode/DerivedData/Runner-fibfeuemsrceklekalhxiwypiwzd/Index.noindex/PrecompiledHeaders",
+      "pchPath" : "/Users/sgtmac/Projects/Flutter/Innova/innova/ios/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "commandLine" : {
+        "table" : {
+          "BUILD_DIR" : "/Users/sgtmac/Projects/Flutter/Innova/innova/build/ios",
+          "COMPILER_INDEX_STORE_ENABLE" : "NO",
+          "FLUTTER_SUPPRESS_ANALYTICS" : "true",
+          "SDKROOT" : "iphonesimulator26.2"
+        }
+      },
+      "synthesized" : {
+        "table" : {
+          "ACTION" : "build",
+          "ASSETCATALOG_FILTER_FOR_DEVICE_MODEL" : "iPhone17,1",
+          "ASSETCATALOG_FILTER_FOR_DEVICE_OS_VERSION" : "18.3.1",
+          "ASSETCATALOG_FILTER_FOR_THINNING_DEVICE_CONFIGURATION" : "iPhone17,1",
+          "BUILD_ACTIVE_RESOURCES_ONLY" : "YES",
+          "ENABLE_PREVIEWS" : "NO",
+          "ENABLE_XOJIT_PREVIEWS" : "YES",
+          "TARGET_DEVICE_IDENTIFIER" : "2D29C647-E525-49FC-8564-8DAD6E20C1F7",
+          "TARGET_DEVICE_MODEL" : "iPhone17,1",
+          "TARGET_DEVICE_OS_VERSION" : "18.3.1",
+          "TARGET_DEVICE_PLATFORM_NAME" : "iphonesimulator"
+        }
+      }
+    }
+  },
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

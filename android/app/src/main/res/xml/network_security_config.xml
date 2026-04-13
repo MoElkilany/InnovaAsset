@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Network Security Config
+    Allows cleartext (HTTP) traffic ONLY for the specific IP used by the
+    app backend. All other traffic remains encrypted (HTTPS).
+-->
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <!-- Innova backend server -->
+        <domain includeSubdomains="false">62.149.83.161</domain>
+    </domain-config>
+
+    <!-- All other domains must use HTTPS -->
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>

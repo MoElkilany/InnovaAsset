@@ -1,0 +1,169 @@
+# Innova — WebView App Setup & Build Guide
+
+> A production-ready Flutter WebView application targeting `http://62.149.83.161:8055`
+
+---
+
+## 📁 Project Structure
+
+```
+lib/
+├── main.dart                          # App entry-point
+├── core/
+│   ├── constants/
+│   │   └── app_constants.dart         # Base URL, allowed hosts, external schemes
+│   └── theme/
+│       └── app_theme.dart             # Color palette, ThemeData
+├── features/
+│   └── webview/
+│       ├── webview_controller.dart    # State, navigation delegate, connectivity
+│       └── webview_screen.dart        # UI: WebView + loading + error + offline
+├── widgets/
+│   ├── error_view.dart                # Page-load error overlay
+│   └── no_internet_view.dart          # Offline overlay
+└── services/
+    └── connectivity_service.dart      # Singleton connectivity monitor
+```
+
+---
+
+## Dependencies
+
+| Package | Purpose |
+|---|---|
+| `webview_flutter ^4.10.0` | Native WebView for Android & iOS |
+| `url_launcher ^6.3.1` | Opens `tel:`, `mailto:`, `whatsapp:` externally |
+| `connectivity_plus ^6.1.1` | Detects online/offline state |
+
+---
+
+## Features Implemented
+
+| Feature | Details |
+|---|---|
+| WebView | Full-screen, JS enabled, hardware-accelerated |
+| Loading splash | Branded logo + spinner shown during initial load |
+| Progress bar | Linear progress indicator at top of screen |
+| Pull-to-refresh | RefreshIndicator wrapping the WebView |
+| Offline detection | Auto-shows "No Internet" screen, auto-reloads on reconnect |
+| Error handling | Shows friendly error screen for main-frame failures |
+| Back navigation | Android back button goes back in history; exits if at root |
+| External links | `tel:`, `mailto:`, `whatsapp:`, `sms:` open native apps |
+| Domain filtering | Only `62.149.83.161` is allowed inside WebView |
+| SafeArea | Applied globally, respects notch/status bar |
+
+---
+
+## Platform Security
+
+### Android
+- Internet + Network State permissions declared
+- `network_security_config.xml` allows HTTP only for `62.149.83.161`; enforces HTTPS elsewhere
+- Query intents for browser, `tel:`, `mailto:`, `whatsapp:` (Android 11+)
+
+### iOS
+- ATS exception scoped to `62.149.83.161` only — `NSAllowsArbitraryLoads` is `false`
+- `LSApplicationQueriesSchemes` declared for `tel`, `mailto`, `whatsapp`, `sms`
+
+---
+
+## 1 — Initial Setup
+
+```bash
+cd innova
+flutter pub get
+flutter analyze lib/
+```
+
+---
+
+## 2 — Run on Device / Simulator
+
+```bash
+flutter run
+flutter devices
+flutter run -d <device_id>
+flutter run --release
+```
+
+---
+
+## 3 — Build for Android
+
+### Debug APK
+```bash
+flutter build apk --debug
+# Output: build/app/outputs/flutter-apk/app-debug.apk
+```
+
+### Release APK
+```bash
+flutter build apk --release
+# Output: build/app/outputs/flutter-apk/app-release.apk
+```
+
+### Release AAB (Google Play Store)
+```bash
+flutter build appbundle --release
+# Output: build/app/outputs/bundle/release/app-release.aab
+```
+
+> **Signing**: Configure your keystore in `android/app/build.gradle.kts`.
+> See https://docs.flutter.dev/deployment/android
+
+---
+
+## 4 — Build for iOS
+
+```bash
+# Simulator
+flutter build ios --simulator
+
+# Device (requires signing)
+flutter build ios --release
+
+# App Store IPA
+flutter build ipa
+# Output: build/ios/ipa/innova.ipa
+```
+
+Or use Xcode: `open ios/Runner.xcworkspace` then Product → Archive.
+
+---
+
+## 5 — Configuration
+
+### Change the target URL
+Edit `lib/core/constants/app_constants.dart`:
+```dart
+static const String baseUrl = 'https://your-new-domain.com';
+static const List<String> allowedHosts = ['your-new-domain.com'];
+```
+
+If moving to HTTPS, remove ATS exception from `Info.plist` and `network_security_config.xml`.
+
+---
+
+## 6 — Store Compliance Notes
+
+### Google Play
+- Domain whitelist avoids open redirect policy violations
+- Pull-to-refresh + offline screen satisfies "minimal functionality" rule
+- Cleartext scoped to single IP via `network_security_config` (not global)
+
+### Apple App Store
+- `NSAllowsArbitraryLoads = false` with scoped exception only
+- Native offline/error screens prevent rejection as "wrapper app"
+
+---
+
+## 7 — App Identity Checklist
+
+| Item | Location | Value to update |
+|---|---|---|
+| App name (Android) | `AndroidManifest.xml` android:label | `Innova` |
+| App name (iOS) | `Info.plist` CFBundleDisplayName | `Innova` |
+| Android bundle ID | `android/app/build.gradle.kts` | `com.innova.app` |
+| iOS bundle ID | Xcode Signing & Capabilities | `com.innova.app` |
+| Version | `pubspec.yaml` | `1.0.0+1` |
+| App icon | Use `flutter_launcher_icons` package | Replace placeholder |

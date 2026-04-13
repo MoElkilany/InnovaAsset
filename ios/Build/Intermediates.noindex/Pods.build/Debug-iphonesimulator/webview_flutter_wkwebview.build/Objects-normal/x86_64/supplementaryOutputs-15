@@ -1,0 +1,37 @@
+{
+  "/Users/sgtmac/.pub-cache/hosted/pub.dev/webview_flutter_wkwebview-3.24.2/darwin/webview_flutter_wkwebview/Sources/webview_flutter_wkwebview/URLRequestProxyAPIDelegate.swift" : {
+    "const-values" : "/Users/sgtmac/Projects/Flutter/Innova/innova/ios/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/webview_flutter_wkwebview.build/Objects-normal/x86_64/URLRequestProxyAPIDelegate.swiftconstvalues",
+    "dependencies" : "/Users/sgtmac/Projects/Flutter/Innova/innova/ios/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/webview_flutter_wkwebview.build/Objects-normal/x86_64/URLRequestProxyAPIDelegate.d",
+    "diagnostics" : "/Users/sgtmac/Projects/Flutter/Innova/innova/ios/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/webview_flutter_wkwebview.build/Objects-normal/x86_64/URLRequestProxyAPIDelegate.dia",
+    "object" : "/Users/sgtmac/Projects/Flutter/Innova/innova/ios/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/webview_flutter_wkwebview.build/Objects-normal/x86_64/URLRequestProxyAPIDelegate.o",
+    "swift-dependencies" : "/Users/sgtmac/Projects/Flutter/Innova/innova/ios/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/webview_flutter_wkwebview.build/Objects-normal/x86_64/URLRequestProxyAPIDelegate.swiftdeps"
+  },
+  "/Users/sgtmac/.pub-cache/hosted/pub.dev/webview_flutter_wkwebview-3.24.2/darwin/webview_flutter_wkwebview/Sources/webview_flutter_wkwebview/UserContentControllerProxyAPIDelegate.swift" : {
+    "const-values" : "/Users/sgtmac/Projects/Flutter/Innova/innova/ios/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/webview_flutter_wkwebview.build/Objects-normal/x86_64/UserContentControllerProxyAPIDelegate.swiftconstvalues",
+    "dependencies" : "/Users/sgtmac/Projects/Flutter/Innova/innova/ios/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/webview_flutter_wkwebview.build/Objects-normal/x86_64/UserContentControllerProxyAPIDelegate.d",
+    "diagnostics" : "/Users/sgtmac/Projects/Flutter/Innova/innova/ios/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/webview_flutter_wkwebview.build/Objects-normal/x86_64/UserContentControllerProxyAPIDelegate.dia",
+    "object" : "/Users/sgtmac/Projects/Flutter/Innova/innova/ios/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/webview_flutter_wkwebview.build/Objects-normal/x86_64/UserContentControllerProxyAPIDelegate.o",
+    "swift-dependencies" : "/Users/sgtmac/Projects/Flutter/Innova/innova/ios/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/webview_flutter_wkwebview.build/Objects-normal/x86_64/UserContentControllerProxyAPIDelegate.swiftdeps"
+  },
+  "/Users/sgtmac/.pub-cache/hosted/pub.dev/webview_flutter_wkwebview-3.24.2/darwin/webview_flutter_wkwebview/Sources/webview_flutter_wkwebview/UserScriptProxyAPIDelegate.swift" : {
+    "const-values" : "/Users/sgtmac/Projects/Flutter/Innova/innova/ios/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/webview_flutter_wkwebview.build/Objects-normal/x86_64/UserScriptProxyAPIDelegate.swiftconstvalues",
+    "dependencies" : "/Users/sgtmac/Projects/Flutter/Innova/innova/ios/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/webview_flutter_wkwebview.build/Objects-normal/x86_64/UserScriptProxyAPIDelegate.d",
+    "diagnostics" : "/Users/sgtmac/Projects/Flutter/Innova/innova/ios/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/webview_flutter_wkwebview.build/Objects-normal/x86_64/UserScriptProxyAPIDelegate.dia",
+    "object" : "/Users/sgtmac/Projects/Flutter/Innova/innova/ios/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/webview_flutter_wkwebview.build/Objects-normal/x86_64/UserScriptProxyAPIDelegate.o",
+    "swift-dependencies" : "/Users/sgtmac/Projects/Flutter/Innova/innova/ios/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/webview_flutter_wkwebview.build/Objects-normal/x86_64/UserScriptProxyAPIDelegate.swiftdeps"
+  },
+  "/Users/sgtmac/.pub-cache/hosted/pub.dev/webview_flutter_wkwebview-3.24.2/darwin/webview_flutter_wkwebview/Sources/webview_flutter_wkwebview/WebKitLibrary.g.swift" : {
+    "const-values" : "/Users/sgtmac/Projects/Flutter/Innova/innova/ios/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/webview_flutter_wkwebview.build/Objects-normal/x86_64/WebKitLibrary.g.swiftconstvalues",
+    "dependencies" : "/Users/sgtmac/Projects/Flutter/Innova/innova/ios/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/webview_flutter_wkwebview.build/Objects-normal/x86_64/WebKitLibrary.g.d",
+    "diagnostics" : "/Users/sgtmac/Projects/Flutter/Innova/innova/ios/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/webview_flutter_wkwebview.build/Objects-normal/x86_64/WebKitLibrary.g.dia",
+    "object" : "/Users/sgtmac/Projects/Flutter/Innova/innova/ios/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/webview_flutter_wkwebview.build/Objects-normal/x86_64/WebKitLibrary.g.o",
+    "swift-dependencies" : "/Users/sgtmac/Projects/Flutter/Innova/innova/ios/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/webview_flutter_wkwebview.build/Objects-normal/x86_64/WebKitLibrary.g.swiftdeps"
+  },
+  "/Users/sgtmac/.pub-cache/hosted/pub.dev/webview_flutter_wkwebview-3.24.2/darwin/webview_flutter_wkwebview/Sources/webview_flutter_wkwebview/WebpagePreferencesProxyAPIDelegate.swift" : {
+    "const-values" : "/Users/sgtmac/Projects/Flutter/Innova/innova/ios/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/webview_flutter_wkwebview.build/Objects-normal/x86_64/WebpagePreferencesProxyAPIDelegate.swiftconstvalues",
+    "dependencies" : "/Users/sgtmac/Projects/Flutter/Innova/innova/ios/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/webview_flutter_wkwebview.build/Objects-normal/x86_64/WebpagePreferencesProxyAPIDelegate.d",
+    "diagnostics" : "/Users/sgtmac/Projects/Flutter/Innova/innova/ios/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/webview_flutter_wkwebview.build/Objects-normal/x86_64/WebpagePreferencesProxyAPIDelegate.dia",
+    "object" : "/Users/sgtmac/Projects/Flutter/Innova/innova/ios/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/webview_flutter_wkwebview.build/Objects-normal/x86_64/WebpagePreferencesProxyAPIDelegate.o",
+    "swift-dependencies" : "/Users/sgtmac/Projects/Flutter/Innova/innova/ios/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/webview_flutter_wkwebview.build/Objects-normal/x86_64/WebpagePreferencesProxyAPIDelegate.swiftdeps"
+  }
+}

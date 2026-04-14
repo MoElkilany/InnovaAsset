@@ -92,23 +92,13 @@ class WebViewControllerWrapper extends ChangeNotifier {
   NavigationDecision _onNavigationRequest(NavigationRequest request) {
     final uri = Uri.parse(request.url);
 
-    // Always allow external scheme links to be opened outside the app
+    // Always allow external scheme links to be opened in external apps (tel, mailto, etc.)
     if (AppConstants.externalSchemes.contains(uri.scheme)) {
       _launchExternal(request.url);
       return NavigationDecision.prevent;
     }
 
-    // Allow navigation only to trusted hosts
-    final host = uri.host;
-    final isAllowed = AppConstants.allowedHosts.any(
-      (allowed) => host == allowed || host.endsWith('.$allowed'),
-    );
-
-    if (!isAllowed) {
-      _launchExternal(request.url);
-      return NavigationDecision.prevent;
-    }
-
+    // Allow ALL other URLs to load in the WebView (no redirect to external browser)
     return NavigationDecision.navigate;
   }
 

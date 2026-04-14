@@ -11,8 +11,8 @@ class AppConstants {
   static const String bundleId = 'com.innova.app';
 
   // ─── WebView Config ────────────────────────────────────────────────────────
-  static const String androidBaseUrl = 'http://62.149.83.161:8055';
-  static const String iosBaseUrl = 'https://assetinnova-001-site1.qtempurl.com/login';
+  static const String androidBaseUrl = 'https://assetfront-001-site1.rtempurl.com/login';
+  static const String iosBaseUrl     = 'https://assetfront-001-site1.rtempurl.com/login';
 
   /// Selects the correct URL based on the current platform.
   static String get baseUrl => Platform.isIOS ? iosBaseUrl : androidBaseUrl;

@@ -48,6 +48,20 @@
 				<key>NSThirdPartyExceptionAllowsInsecureHTTPLoads</key>
 				<false/>
 			</dict>
+			<key>assetfront-001-site1.rtempurl.com</key>
+			<dict>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<false/>
+			</dict>
+			<key>assetinnova-001-site1.qtempurl.com</key>
+			<dict>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<false/>
+			</dict>
 		</dict>
 	</dict>
 	<key>NSCameraUsageDescription</key>

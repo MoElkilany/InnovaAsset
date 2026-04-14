@@ -6,6 +6,7 @@ import '../../core/constants/app_constants.dart';
 import '../../core/theme/app_theme.dart';
 import '../../widgets/error_view.dart';
 import '../../widgets/no_internet_view.dart';
+import '../asset_registration/presentation/screens/asset_form_screen.dart';
 import 'webview_controller.dart';
 
 class WebViewScreen extends StatefulWidget {
@@ -56,6 +57,34 @@ class _WebViewScreenState extends State<WebViewScreen> {
       },
       child: Scaffold(
         backgroundColor: Colors.white,
+        appBar: AppBar(
+          title: const Text(AppConstants.appName),
+          elevation: 0,
+          actions: [
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Center(
+                child: ElevatedButton.icon(
+                  onPressed: () {
+                    Navigator.of(context).pushReplacement(
+                      MaterialPageRoute(
+                        builder: (context) => const AssetFormScreen(),
+                      ),
+                    );
+                  },
+                  icon: const Icon(Icons.edit, size: 18),
+                  label: const Text('Offline'),
+                  style: ElevatedButton.styleFrom(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 12,
+                      vertical: 8,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
         body: SafeArea(
           child: _buildBody(),
         ),

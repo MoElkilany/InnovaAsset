@@ -13,9 +13,12 @@ class AppConstants {
   // ─── WebView Config ────────────────────────────────────────────────────────
   static const String androidBaseUrl = 'https://assetfront-001-site1.rtempurl.com/login';
   static const String iosBaseUrl     = 'https://assetfront-001-site1.rtempurl.com/login';
+    static const String mainBaseUrl  = 'https://ebtikar.services:40';
+
 
   /// Selects the correct URL based on the current platform.
-  static String get baseUrl => Platform.isIOS ? iosBaseUrl : androidBaseUrl;
+  static String get baseUrl => mainBaseUrl; 
+  // static String get baseUrl => Platform.isIOS ? iosBaseUrl : androidBaseUrl;
 
   /// Allowed hosts — navigation outside this list opens in external browser.
   static const List<String> allowedHosts = [

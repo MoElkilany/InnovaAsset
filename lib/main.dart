@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import 'core/constants/app_constants.dart';
 import 'core/theme/app_theme.dart';
 import 'features/webview/webview_screen.dart';
 import 'services/connectivity_service.dart';
 
 void main() {
+  // Log baseUrl on startup
+  print('Innova - baseUrl: ${AppConstants.baseUrl}');
+
   WidgetsFlutterBinding.ensureInitialized();
 
   // Lock orientation to portrait

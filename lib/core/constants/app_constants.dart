@@ -1,7 +1,4 @@
-import 'dart:io';
-
 /// Central configuration for the Innova app.
-/// Selection is automatic based on the platform.
 class AppConstants {
   AppConstants._();
 
@@ -11,19 +8,13 @@ class AppConstants {
   static const String bundleId = 'com.innova.app';
 
   // ─── WebView Config ────────────────────────────────────────────────────────
-  static const String androidBaseUrl = 'https://assetfront-001-site1.rtempurl.com/login';
-  static const String iosBaseUrl     = 'https://assetfront-001-site1.rtempurl.com/login';
-    static const String mainBaseUrl  = 'https://ebtikar.services:40';
-
-
-  /// Selects the correct URL based on the current platform.
-  static String get baseUrl => mainBaseUrl; 
-  // static String get baseUrl => Platform.isIOS ? iosBaseUrl : androidBaseUrl;
+  /// Single base URL used on every platform (Android, iOS, etc.).
+  static const String baseUrl = 'https://asset.innovandmore.com/';
 
   /// Allowed hosts — navigation outside this list opens in external browser.
   static const List<String> allowedHosts = [
-    '62.149.83.161',
-    'assetinnova-001-site1.qtempurl.com',
+    'asset.innovandmore.com',
+    'www.asset.innovandmore.com',
   ];
 
   // ─── URL Schemes that must be launched externally ─────────────────────────
